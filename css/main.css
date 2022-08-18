@@ -1,0 +1,43 @@
+.parallax{                
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contenidoParallax{
+    height:300px; 
+    background-color: #096c47;
+}
+
+#contenidoParallax h2{
+    color:whitesmoke; 
+    font-weight: 600;
+    margin-top: 0
+}
+
+#contenidoParallax div p{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+#contenidoParallax div ul li{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+#textoParallax{
+    background-color: rgba(222, 222, 222, 0.2);
+    height: 175px;
+    line-height: 30px;
+}
+#containerParallax{
+    display: table
+}
+#textoParallax{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
