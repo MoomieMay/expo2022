@@ -25,8 +25,8 @@
     <!-- ***************************************INICIO HEADER*********************************************** -->
     <nav class="navbar fixed-top position-absolute navbar-inverse lg navbar-dark p-md-3 pt-4"><!--contenedor nav-->
 
-      <div class="brand"> <!--contenedor del logo-->
-        <img src="./assets/img/logo.webp" alt="" width="250px" />
+      <div class="brand pt-4"> <!--contenedor del logo-->
+        <img class="pt-2" src="./assets/img/logo.webp" alt="" width="40%" />
       </div>
 
       <div class="container-fluid flex-row-reverse justify-content-end" style="z-index: 99"><!--contenedor del logo-->
@@ -46,38 +46,25 @@
         </button><!--menu hamburguesa-->
 
         <div class="collapse navbar-collapse m-2" id="navbarSupportedContent"><!--contenedor del menu desplegable-->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="container-menu col-md-2" style="background: black; border-radius:20px;"> 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2">
             <!--Elementos de la navbar-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://www.youtube.com/">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/">Anuario</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/">Pagina principal</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.youtube.com/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/">Anuario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/">Pagina principal</a>
+              </li>
 
-            <!--<li class="nav-item dropdown"> PARA SUBMENU
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://www.youtube.com/"></a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>-->
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
     </nav>
 
     <!-- ***************************************FIN HEADER*********************************************** -->
@@ -91,7 +78,7 @@
     </div>
 
     <!--<div class="bg-light">
-      <h3>Discover England!</h3>
+      <h3>Titulo</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
         quidem ex! Soluta a magni eum quo architecto debitis facilis quae. Quas
@@ -99,9 +86,55 @@
       </p>
     </div>-->
 
-    <div class="bgimg-2">
-      <div class="caption">
-        <span class="border">TEXTO EJEMPLO</span>
+    <div id="contenidoParallax">
+      <div
+        class="container"
+        style="margin: auto; text-align: center"
+        id="containerParallax"
+      >
+        <br />
+       
+
+        <h2 class='mb-4' style='letter-spacing: 2px;'>Sobre la expo</h2>
+
+        <div
+          id="textoParallax"
+          style="width: 100% !important"
+          class="col-md-10 col-md-offset-1"
+        >
+        <br>
+          <p class='fs-4'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus magnam, et ullam dolorum incidunt atque rerum at itaque. Fugit veniam modi quae quasi dolores! Praesentium, modi. Ad placeat reprehenderit ut.
+          </p>
+        <br>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bgimg-2"></div>
+    <div id="contenidoParallax">
+      <div
+        class="container"
+        style="margin: auto; text-align: center"
+        id="containerParallax"
+      >
+        <br />
+       
+
+        <h2 class='mb-4' style='letter-spacing: 2px;'>Sobre la expo</h2>
+
+        <div
+          id="textoParallax"
+          style="width: 100% !important"
+          class="col-md-10 col-md-offset-1"
+        >
+        <br>
+          <p class='fs-4'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus magnam, et ullam dolorum incidunt atque rerum at itaque. Fugit veniam modi quae quasi dolores! Praesentium, modi. Ad placeat reprehenderit ut.
+          </p>
+        <br>
+        </div>
       </div>
     </div>
 
