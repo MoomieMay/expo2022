@@ -77,15 +77,6 @@
       </div>
     </div>
 
-    <!--<div class="bg-light">
-      <h3>Titulo</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-        quidem ex! Soluta a magni eum quo architecto debitis facilis quae. Quas
-        fuga a corporis soluta libero, aut officia vel voluptate!
-      </p>
-    </div>-->
-
     <div id="contenidoParallax">
       <div
         class="container"
@@ -111,7 +102,7 @@
       </div>
     </div>
 
-
+    <!--parallax 2-->
     <div class="bgimg-2"></div>
     <div id="contenidoParallax">
       <div
@@ -138,41 +129,36 @@
       </div>
     </div>
 
-    <!--<div style="position: relative">
-      <div class="bg-dark">
-        <h3 class="light-text">Passion in Paris!</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, illum.
-          Saepe sed, quasi aliquid fugit dignissimos dolores expedita dolore
-          repellendus voluptas deserunt eos maiores repellat placeat voluptatem
-          sapiente esse maxime.
-        </p>
-      </div>
-    </div>-->
+    <!--parallax 3-->
+    <div class="bgimg-3"></div>
+    <div id="contenidoParallax">
+      <div
+        class="container"
+        style="margin: auto; text-align: center"
+        id="containerParallax"
+      >
+        <br />
+       
 
-    <div class="bgimg-3">
-      <div class="caption">
-        <span class="border">TEXTO EJEMPLO</span>
+        <h2 class='mb-4' style='letter-spacing: 2px;'>Sobre la expo</h2>
+
+        <div
+          id="textoParallax"
+          style="width: 100% !important"
+          class="col-md-10 col-md-offset-1"
+        >
+        <br>
+          <p class='fs-4'>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus magnam, et ullam dolorum incidunt atque rerum at itaque. Fugit veniam modi quae quasi dolores! Praesentium, modi. Ad placeat reprehenderit ut.
+          </p>
+        <br>
+        </div>
       </div>
     </div>
 
-    <!--<div style="position: relative">
-      <div class="bg-dark">
-        <h3 class="light-text">Moscow Never Sleeps!</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic
-          eum consequuntur iste, molestiae facere odit ipsum. Quos magnam
-          nostrum culpa rem consequatur dolor beatae nemo soluta alias. Iste,
-          nihil!
-        </p>
-      </div>
-    </div>-->
-
-    <div class="bgimg-1">
-      <div class="caption">
-        <span class="border">TEXTO EJEMPLO</span>
-      </div>
-    </div>
+    <!--parallax 4-->
+    <div class="bgimg-1"></div>
+    
 
     <!-- ***************************************FIN CONTENIDO*********************************************** -->
     <footer class="center footer">
