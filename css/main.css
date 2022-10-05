@@ -243,7 +243,7 @@
 
 .bg__img-2 {
   position: relative;
-  z-index: -1;
+  z-index: 1000;
   background: url("../img/bg/bg__2.png");
   background-blend-mode: darken;
   height: 100vh;
@@ -279,8 +279,32 @@
   z-index: -1;
 }
 .slider__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider__container.activado {
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: fit-content;
+  background-color: rgba(0, 100, 35, 0.9);
+  border-radius: 30px;
+}
+
+.s__title {
+  font-size: 1.2em;
+  color: var(--white);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+}
+.s__content {
+  color: var(--white);
+  padding: 0 2em;
+}
+/* .slider__container.activado {
   width: 100%;
   height: 100%;
   display: flex;
@@ -303,16 +327,7 @@
   justify-content: center;
 }
 
-.s__title {
-  font-size: 1.2em;
-  color: var(--white);
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 800;
-}
-.s__content {
-  color: var(--white);
-  padding: 0 2em;
-}
+
 @media (max-width: 908px) {
   .slider__wrapper {
     width: 100%;
@@ -346,7 +361,7 @@
   .s__content {
     padding: 0 1em;
   }
-}
+} */
 #text__intro {
   height: 100%;
 }

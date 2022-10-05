@@ -30,7 +30,7 @@
   </head>
   <body class="body">
     <div id="main-container">
-      <!-- inicio de la pagina -->
+      <!-- Inicio de la pagina -->
       <div id="main__wrapper">
         <!-- INICIO buttons and sidebar -->
         <div id="btn__sidebar__wrapper" class="position-absolute w-100">
@@ -101,22 +101,6 @@
                   <i class="mt-2 fa-solid fa-angles-down"></i>
                 </a>
               </div>
-
-              <svg id="filters" class="d-none">
-                <defs>
-                  <filter id="threshold">
-                    <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-                    <feColorMatrix
-                      in="SourceGraphic"
-                      type="matrix"
-                      values="1 0 0 0 0
-                                0 1 0 0 0
-                                0 0 1 0 0
-                                0 0 0 255 -140"
-                    />
-                  </filter>
-                </defs>
-              </svg>
             </div>
           </div>
 
@@ -131,32 +115,31 @@
               data-aos="fade-right"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              class="slider__container activado"
+              class="slider__container"
             >
-              <div class="slider__wrapper">
+              <div class="slider__wrapper d-flex flex-column col-10 p-4 m-4">
                 <div class="slider__text">
                   <div class="s__title">
                     <h1 class="text-center">Sobre la expo</h1>
                   </div>
                   <div class="s__content">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate, aspernatur. Ipsam placeat sequi nostrum
-                      numquam quod tenetur fuga reiciendis accusantium molestiae
-                      consequuntur consequatur quidem modi praesentium ullam
-                      sapiente temporibus error dolores nulla quae, a architecto
-                      rerum. Velit aspernatur laborum deserunt molestiae autem
-                      dolores sit. Aliquam provident minus minima nobis modi
-                      optio quibusdam natus, est odio labore molestiae maiores
-                      quo harum sed, quia iusto, nostrum ut. Corporis, animi
-                      minus tempore voluptatum reiciendis aperiam perferendis
-                      labore corrupti eos ab commodi explicabo dolores soluta
-                      voluptates nulla minima nostrum similique? Eveniet
-                      sapiente placeat voluptatum laudantium aspernatur natus
-                      distinctio, accusamus itaque, quaerat debitis voluptatem
-                      possimus!
+                      La Exposición Técnica se realiza con el objetivo de
+                      demostrar las tecnologías de las distintas tecnicaturas y
+                      mostrarle a las personas nuestro aprendizaje de
+                      conocimientos teóricos y práctica. La Exposición Técnica
+                      se realizará el 15 de Noviembre para el Dia de la
+                      Educación Técnica .
                     </p>
                   </div>
+                </div>
+                <div class="slider__video w-100 d-flex justify-content-center">
+                  <video
+                    class="col-9 position-static"
+                    style="z-index: 1000"
+                    controls
+                    src="./video/Waffle falling over.mp4"
+                  ></video>
                 </div>
               </div>
             </div>
