@@ -121,4 +121,3 @@ function animate() {
 
 // Start the animation.
 window.onload = animate();
-
