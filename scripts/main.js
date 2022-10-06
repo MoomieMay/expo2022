@@ -3,7 +3,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("#main-container").toggleClass("toggled");
     $(".nav__btn__hamburger").toggleClass("active");
-    $(".btn__container").toggleClass("d-none");
+
     $(".bar").toggleClass("active");
     $("#overlay").fadeToggle("slow", "swing");
   });
@@ -12,7 +12,7 @@ $(document).ready(function () {
     $("#overlay").fadeOut("slow");
     $("#main-container").removeClass("toggled");
     $(".nav__btn__hamburger").removeClass("active");
-    $(".btn__container").removeClass("d-none");
+
     $(".bar").removeClass("active");
   });
 });
