@@ -21,7 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- FONTS -->
 
@@ -106,9 +106,8 @@
 
           <div id="2" class="bg__parallax bg__img-2 bg__normal">
             <div
-              data-aos="fade-right"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
+              data-aos="fade-up"
+              data-aos-duration="3000"
               class="blur displayed"
             ></div>
             <div
@@ -117,13 +116,13 @@
               data-aos-duration="1500"
               class="slider__container"
             >
-              <div class="slider__wrapper d-flex flex-column col-10 p-4 m-4">
+              <div class="slider__wrapper d-flex col-10 p-4 m-4">
                 <div class="slider__text">
                   <div class="s__title">
                     <h1 class="text-center">Sobre la expo</h1>
                   </div>
                   <div class="s__content">
-                    <p>
+                    <p style="text-align: justify">
                       La Exposición Técnica se realiza con el objetivo de
                       demostrar las tecnologías de las distintas tecnicaturas y
                       mostrarle a las personas nuestro aprendizaje de
@@ -135,9 +134,9 @@
                 </div>
                 <div class="slider__video w-100 d-flex justify-content-center">
                   <video
-                    class="col-9 position-static"
-                    style="z-index: 1000"
                     controls
+                    autoplay
+                    class="video__spot"
                     src="./video/Waffle falling over.mp4"
                   ></video>
                 </div>
