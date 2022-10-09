@@ -414,3 +414,7 @@
     transform: translateY(40px);
   }
 }
+
+.proyectos__maincontainer {
+  padding: 4em;
+}
