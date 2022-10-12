@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+:root {
+  --black: #191a19;
+  --dark-green: #006423;
+  --white-green: #4e9f3d;
+  --cream: #d8e9a8;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* font-family: "Lora", serif; */
+  /* font-family: "Ubuntu", sans-serif; */
+}
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f0f0e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #223d27;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #246531;
+}
+
+/* SCROLL FIN*/
