@@ -264,6 +264,8 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
+  overflow: hidden;
 }
 .bg__normal {
   background-color: rgba(0, 0, 0, 0.1);
@@ -281,7 +283,7 @@
 }
 .overlay__tec {
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 
   height: 320vh;
   width: 100%;
@@ -438,7 +440,7 @@
   height: 100%;
 }
 .card__tec {
-  width: 85%;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
