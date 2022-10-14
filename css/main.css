@@ -135,24 +135,9 @@
   width: min(70vw, 250px);
   filter: brightness(76%);
 
-  /* transform: translateX(0px) rotate(360deg);
-  animation: engrenagemAnimate 40s linear infinite; */
 }
 
-/* @keyframes engrenagemAnimate {
-  0% {
-    opacity: 1;
-    transform: translateX(0px) rotate(360deg);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(0px) rotate(190deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px) rotate(360deg);
-  }
-} */
+
 @media (max-height: 728px) {
   #brand__img img {
     width: min(70vw, 200px);
@@ -192,6 +177,8 @@
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
 
 /* Sidebar Styles */
 

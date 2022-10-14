@@ -19,30 +19,57 @@
     <!-- Meta tags end -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="../../proyectos.css" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- ICONS -->
     <link rel="shortcut icon" href="./img/logos/icon.png" />
     <script src="https://kit.fontawesome.com/78e29a3f0a.js"></script>
   </head>
-  <body>
-    <header class="header">
-      <ul class="header__ul">
-        <li class="header__li">
-          <a href="" class="header__a-item">3er año</a>
-        </li>
-        <li class="header__li">
-          <a href="" class="header__a-item">4to año</a>
-        </li>
-        <li class="header__li">
-          <a href="" class="header__a-item">5to año</a>
-        </li>
-        <li class="header__li">
-          <a href="" class="header__a-item">6to año</a>
-        </li>
-      </ul>
-    </header>
+  <body class="body">
+
+    
+
+    <div class="header">
+      <p class="header__item header__item-active" data-target="#inicio">
+        Inicio
+      </p>
+      <p class="header__item" data-target="#tercer">3er año</p>
+      <p class="header__item" data-target="#cuarto">4to año</p>
+      <p class="header__item" data-target="#quinto">5to año</p>
+      <p class="header__item" data-target="#sexto">6to año</p>
+    </div>
+
+    <div class="content">
+      <!-- Pagina de inicio -->
+      <div data-content id="inicio" class="content__wrapper active">
+        <h1>Inicio</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          architecto aperiam accusamus vitae possimus. Atque quam quibusdam
+          nobis perferendis voluptate harum, sed aliquam illo! Suscipit!
+        </p>
+      </div>
+
+      <div data-content id="tercer" class="content__wrapper">
+        <h1>3er año</h1>
+      </div>
+
+      <div data-content id="cuarto" class="content__wrapper">
+        <h1>4to año</h1>
+      </div>
+
+      <div data-content id="quinto" class="content__wrapper">
+        <h1>5to año</h1>
+      </div>
+
+      <div data-content id="sexto" class="content__wrapper">
+        <h1>6to año</h1>
+      </div>
+    </div>
+
+    <script src="../main.js"></script>
   </body>
 </html>
