@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("/css/main.css");
 
 /* Aquí definimos las Custom properties */
 :root {
@@ -243,6 +244,7 @@ body {
   cursor: pointer;
   font-weight: 600;
   font-size: 1.3em;
+  margin-bottom: 0;
 }
 .header__item:after {
   display: block;
@@ -267,103 +269,62 @@ body {
   background-color: rgb(240, 226, 30);
   transition: 0.5s;
 }
-
-.btn__container {
-  position: fixed;
-  z-index: 1000;
-}
-
-.btn__container.scrolling_down {
-  transform: translate3d(0, -100%, 0);
-  transition: all 0.8s ease;
-}
-.btn__container.scrolling_up {
-  transform: translate3d(0, 0, 0);
-  transition: all 0.8s ease;
-}
-.nav__btn__hamburger {
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 35px;
-  cursor: pointer;
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.nav__btn__hamburger .bar,
-.nav__btn__hamburger:after,
-.nav__btn__hamburger:before {
-  content: "";
-  display: block;
+.sliderImg__wrapper {
   width: 100%;
-  height: 5px;
-  background-color: var(--white);
-  margin: 6px 0px;
-  transition: 0.5s;
+  height: 100%;
+  overflow: hidden;
 }
-.nav__btn__hamburger:hover {
-  transform: translate(0, -5px);
-}
-.nav__btn__hamburger.active:before {
-  transform: rotate(-45deg) translate(-8px, 6px);
-}
-.nav__btn__hamburger.active:after {
-  transform: rotate(45deg) translate(-9px, -8px);
-}
-.bar.active {
-  opacity: 0;
-}
-
-#overlay {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-  width: 100%;
-  margin: 0;
+.sliderImg__ul {
+  display: flex;
+  animation: switch 10s infinite alternate linear;
+  width: 400%;
   padding: 0;
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3em;
+  margin: 0;
 }
-.sidebar-nav li {
+.sliderImg__li {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-  border-radius: 10px;
+  list-style: none;
 }
-.sidebar-nav li a {
-  text-decoration: none;
-  color: var(--white);
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.5em;
-  font-weight: 700;
-  padding: 0.6em;
+.sliderImg__img {
+  width: 100%;
+  height: 94vh;
+  filter: brightness(30%);
 }
-.sidebar-nav li:hover {
-  background-color: var(--white-green);
-  border-radius: 10px;
+.bg__img-1 {
+  position: relative;
+  z-index: 0;
+  background: url("../img/bg/bg__1.png");
+  background-blend-mode: darken;
+  height: 100vh;
+  min-height: 100%;
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes switch {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
