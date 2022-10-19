@@ -38,6 +38,14 @@ $(document).ready(function () {
     $(".bar").removeClass("active");
   });
 });
+
+$(document).ready(function () {
+  $(".header__item-dropdown ").click(function (e) {
+    e.preventDefault();
+    $(".header__item-dropdown").toggleClass("btn-activo");
+    $(".header__dropdown").toggleClass("activado");
+  });
+});
 $("html, body").animate(
   {
     scrollTop: $("div").offset().top,

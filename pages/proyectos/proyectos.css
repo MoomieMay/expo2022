@@ -5,8 +5,8 @@
 :root {
   --negro: #393939;
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
-  --tipo-secundaria: Verdana;
+  --tipo-principal: Lora, serif;
+  --tipo-secundaria: Raleway, sans-serif;
 }
 
 /* Las adaptamos al modo oscuro */
@@ -109,7 +109,7 @@ q:after {
   content: none;
 }
 
-/* Configuramos el texto que seleccionamos */
+/* Configuramos el texto que seleccionamos
 ::-moz-selection {
   background-color: var(--negro);
   color: var(--blanco);
@@ -117,7 +117,7 @@ q:after {
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
-}
+} */
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form,
@@ -183,6 +183,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap");
 :root {
   --black: #191a19;
   --dark-green: #006423;
@@ -237,14 +238,16 @@ body {
   width: 100%;
   padding: 1em;
   gap: 7em;
-  background-color: var(--dark-green);
+  background-color: transparent;
 }
 .header__item {
   color: var(--white);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3em;
   margin-bottom: 0;
+
+  font-family: "Ubuntu", sans-serif;
 }
 .header__item:after {
   display: block;
@@ -269,6 +272,76 @@ body {
   background-color: rgb(240, 226, 30);
   transition: 0.5s;
 }
+.dropdown {
+  display: none;
+}
+.header__item-dropdown {
+  display: none;
+}
+@media (max-width: 980px) {
+  .header {
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    height: 25em;
+
+    padding: 0;
+    padding-right: 1em;
+  }
+  .full {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    color: var(--white);
+  }
+  .dropdown:hover {
+    color: var(--white);
+  }
+  .header__item-dropdown {
+    display: block;
+    height: 3.5em;
+    width: 148px;
+    transition: 0.5s;
+  }
+  .header__item-dropdown.btn-activo {
+    background-color: var(--dark-green);
+    border-radius: 10px 10px 0px 0px;
+  }
+  .header_dropdown-title {
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    padding: 0px 0px 0px 10px;
+  }
+  .header__dropdown {
+    transition: 0.5s;
+    transform: translateX(40em);
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+    background: var(--dark-green);
+    width: 148px;
+
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+
+    top: 55px;
+  }
+
+  .header__dropdown p {
+    padding: 1em;
+  }
+  .header__dropdown.activado {
+    right: 1em;
+    transform: translateX(0em);
+  }
+}
+
 .sliderImg__wrapper {
   width: 100%;
   height: 100%;
@@ -276,8 +349,9 @@ body {
 }
 .sliderImg__ul {
   display: flex;
-  animation: switch 10s infinite alternate linear;
+  animation: switch 20s infinite alternate linear;
   width: 400%;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -287,21 +361,10 @@ body {
 }
 .sliderImg__img {
   width: 100%;
-  height: 94vh;
+  height: 100%;
   filter: brightness(30%);
 }
-.bg__img-1 {
-  position: relative;
-  z-index: 0;
-  background: url("../img/bg/bg__1.png");
-  background-blend-mode: darken;
-  height: 100vh;
-  min-height: 100%;
 
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 @keyframes switch {
   0% {
     margin-left: 0;
@@ -326,5 +389,13 @@ body {
   }
   100% {
     margin-left: -300%;
+  }
+}
+@media (max-height: 500px) {
+  .header {
+    height: 18em;
+  }
+  .header__dropdown p {
+    padding: 0.5em;
   }
 }
