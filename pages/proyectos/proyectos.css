@@ -221,6 +221,10 @@ body {
 
 /* SCROLL FIN*/
 
+body {
+  overflow: hidden;
+}
+
 [data-content] {
   display: none;
 }
@@ -238,7 +242,14 @@ body {
   width: 100%;
   padding: 1em;
   gap: 7em;
+  transition: 0.5s ease-in-out;
   background-color: transparent;
+}
+.header.header__idle {
+  background-color: transparent;
+}
+.header.header__navegando {
+  background-color: var(--dark-green);
 }
 .header__item {
   color: var(--white);
@@ -280,11 +291,8 @@ body {
 }
 @media (max-width: 980px) {
   .header {
-    overflow: hidden;
     justify-content: flex-end;
     align-items: flex-start;
-
-    height: 25em;
 
     padding: 0;
     padding-right: 1em;

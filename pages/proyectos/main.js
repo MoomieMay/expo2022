@@ -46,6 +46,23 @@ $(document).ready(function () {
     $(".header__dropdown").toggleClass("activado");
   });
 });
+
+$(document).ready(function () {
+  $(".home").click(function (e) {
+    e.preventDefault();
+    $(".header").removeClass("header__navegando");
+    $(".header").addClass("header__idle");
+  });
+});
+
+$(document).ready(function () {
+  $(".tab__menu ").click(function (e) {
+    e.preventDefault();
+    $(".header").removeClass("header__idle");
+    $(".header").addClass("header__navegando");
+  });
+});
+
 $("html, body").animate(
   {
     scrollTop: $("div").offset().top,
