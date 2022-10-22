@@ -244,12 +244,15 @@ body {
   gap: 7em;
   transition: 0.5s ease-in-out;
   background-color: transparent;
+  position: absolute;
+  z-index: 1;
 }
 .header.header__idle {
   background-color: transparent;
 }
 .header.header__navegando {
   background-color: var(--dark-green);
+  position: static;
 }
 .header__item {
   color: var(--white);
@@ -400,10 +403,30 @@ body {
   }
 }
 @media (max-height: 500px) {
-  .header {
-    height: 18em;
-  }
   .header__dropdown p {
     padding: 0.5em;
   }
+}
+h1 {
+  color: black;
+}
+.inicioText__span {
+  font-weight: 700 !important;
+  color: var(--white);
+}
+.welcome__container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.welcome__img {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  background-image: url("./tecnicaturas/ipp/bobibot.jpeg");
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
