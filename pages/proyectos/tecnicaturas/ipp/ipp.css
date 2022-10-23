@@ -39,7 +39,7 @@
 .word1,
 .word2,
 .word3 {
-  width: 403px;
+  width: 433px;
   overflow: hidden;
   text-align: center;
   font-size: 4em;
@@ -52,23 +52,23 @@
     width: 0;
   }
   15% {
-    width: 1209px;
+    width: 1299px;
     transform: translateX(0);
   }
 
   25% {
-    width: 1209px;
+    width: 1299px;
     transform: translateX(0);
   }
 
   50% {
-    width: 1209px;
-    transform: translateX(-403px);
+    width: 1299px;
+    transform: translateX(-433px);
   }
 
   75% {
-    width: 1209px;
-    transform: translateX(-806px);
+    width: 1299px;
+    transform: translateX(-866px);
   }
 
   100% {
