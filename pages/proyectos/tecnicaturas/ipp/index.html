@@ -9,7 +9,7 @@
          />
       <meta
          name="keywords"
-         content="EICO, EXPO2022, Expo tecnica, eico expo tecnica 2022"
+         content="EICO, EXPO2022, Expo tecnica, eico expo tecnica 2022, IPP, I.P.P, Informatica"
          />
       <meta name="author" content="Alumnos EICO 6to IPP 2022" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +37,20 @@
          />
       <!-- ICONS -->
       <link rel="shortcut icon" href="/img/logos/logoipp.png" />
-      <script src="https://kit.fontawesome.com/78e29a3f0a.js"></script>
+      <!-- scripts -->
+      <script defer src="https://kit.fontawesome.com/78e29a3f0a.js"></script>
+      <script
+         defer
+         src="https://code.jquery.com/jquery-3.6.1.js"
+         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+         crossorigin="anonymous">
+      </script>
+
+      <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+      <script defer src="../../main.js"></script>
+
+      <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    </head>
    <body class="body">
@@ -60,19 +73,14 @@
                   <li class="text-center"><a href="/index.html">Inicio</a></li>
                   <li class="text-center"><a href="">Galeria</a></li>
                   <li class="text-center">
-                     <a target="_blank" href="http://escuela.eico.edu.ar/web/"
-                        >Pagina principal</a
-                        >
+                     <a target="_blank" href="http://escuela.eico.edu.ar/web/">Pagina principal</a>
                   </li>
                </ul>
             </div>
             <!-- FIN SIDEBAR -->
             <!-- INICIO BTN -->
             <div class="btn__container">
-               <button
-                  class="nav__btn__hamburger"
-                  style="margin-top: 0.5em; margin-left: 1em"
-                  >
+               <button class="nav__btn__hamburger" style="margin-top: 0.5em; margin-left: 1em">
                   <div class="bar"></div>
                </button>
             </div>
@@ -80,33 +88,17 @@
          </div>
          <!-- btn -->
          <div class="header" >
-            <p
-               class="header__item header__item-active full home"
-               data-target="#inicio"
-               >
-               Inicio
-            </p>
+            <p class="header__item header__item-active full home" data-target="#inicio">Inicio</p>
             <p class="header__item full tab__menu"" data-target="#tercer">3er año</p>
             <p class="header__item full tab__menu" data-target="#cuarto">4to año</p>
             <p class="header__item full tab__menu" data-target="#quinto">5to año</p>
             <p class="header__item full tab__menu" data-target="#sexto">6to año</p>
             <button class="header__item-dropdown text-decoration-none">
-               <p
-                  class="header_dropdown-title"
-                  style="display: flex; align-items: center; gap: 1em"
-                  >
-                  Proyectos<i
-                     style="font-size: 0.8em"
-                     class="fa-solid fa-arrow-turn-down"
-                     ></i>
+               <p class="header_dropdown-title" style="display: flex; align-items: center; gap: 1em">Proyectos
+                  <i style="font-size: 0.8em" class="fa-solid fa-arrow-turn-down"></i>
                </p>
                <ul class="header__dropdown">
-                  <p
-                     class="header__item header__item-active home"
-                     data-target="#inicio"
-                     >
-                     Inicio
-                  </p>
+                  <p class="header__item header__item-active home" data-target="#inicio">Inicio</p>
                   <p class="header__item tab__menu"" data-target="#tercer"> 3er año</p>
                   <p class="header__item tab__menu" data-target="#cuarto">4to año</p>
                   <p class="header__item tab__menu" data-target="#quinto">5to año</p>
@@ -129,25 +121,24 @@
                         <img
                            src="./IMG_20220418_120829.jpg"
                            alt=""
-                           class="sliderImg__img"
-                           />
+                           class="sliderImg__img"/>
                      </li>
                      <li class="sliderImg__li">
                         <img
                            src="./IMG_20220418_120829img2.jpg"
                            alt=""
-                           class="sliderImg__img"
-                           />
+                           class="sliderImg__img"/>
                      </li>
                      <li class="sliderImg__li">
                         <img
                            src="./IMG-20220819-WA0001.jpg"
                            alt=""
-                           class="sliderImg__img"
-                           />
+                           class="sliderImg__img"/>
                      </li>
                   </ul>
                </div>
+             
+               
                <div class="inicioText__container position-absolute w-100">
                   <div class="inicioText__wrapper">
                      <h1 class="inicioText__h1 animate__animated animate__fadeInDown">
@@ -179,38 +170,6 @@
               
                <div class="main__container">
 
-                  <!-- <div class="proyecto__wrapper">
-                     <div class="proyecto__title pt-4">
-                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
-                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
-                     </div>
-                     <div class="proyecto__slider">
-
-                        <div class="proyecto__slider-container">
-                            <input type="radio" name="slider" id="item-1" checked>
-                            <input type="radio" name="slider" id="item-2">
-                            <input type="radio" name="slider" id="item-3">
-          
-                
-                            <div class="proyecto__slider-cards">
-                                <label class="card" for="item-1" id="selector-1">
-                                    <img class="img-fluid" src="./bobibot.jpeg">
-                                </label>
-                                <label class="card" for="item-2" id="selector-2">
-                                    <img class="img-fluid" src="./IMG_20220418_120829img2.jpg">
-                                </label>
-                                <label class="card" for="item-3" id="selector-3">
-                                    <img class="img-fluid" src="./IMG-20220819-WA0001.jpg">
-                                </label>
-                                
-                             </label>
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                  </div> -->
-
                   <div class="proyecto__wrapper">
                      <div class="proyecto__title pt-4">
                         <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
@@ -221,25 +180,25 @@
                            <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                  <div class="image__wrapper">
-                                    <img src="./bobibot.jpeg" alt="" />
+                                    <img class="swiper-img" src="./bobibot.jpeg" alt="Proyecto realizado en arduino, auto que esquiva obstaculos mediante sensores" title="6° IPP - Bobibot" />
                                  </div>
                               </div>
                
                               <div class="swiper-slide">
                                  <div class="image__wrapper">
-                                    <img src="./IMG-20220819-WA0001.jpg" alt="" />
+                                    <img class="swiper-img" src="./IMG-20220819-WA0001.jpg" alt="" />
                                  </div>
                               </div>
                
                               <div class="swiper-slide">
                                  <div class="image__wrapper">
-                                    <img src="./IMG_20220418_120829img2.jpg" alt="" />
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
                                  </div>
                               </div>
                
                               <div class="swiper-slide">
                                  <div class="image__wrapper">
-                                    <img src="./IMG_20220418_120829img2.jpg" alt="" />
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
                                  </div>
                               </div>
      
@@ -249,6 +208,7 @@
                
                            <div class="swiper-button-prev"></div>
                            <div class="swiper-button-next"></div>
+                          
                         </div>
                      </div>
                   </div>
@@ -288,51 +248,19 @@
             </div>
 
             <div data-content id="cuarto" class="section__proyectos content__wrapper">
-                  <div class="welcome__container ">
-                     <div class="welcome__img w-100 ">
-                        <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
-                           <h1 class="welcome__text-h1">Cuarto año</h1>
-                           <p class="welcome__text-p">Proyectos</p>
-                        </div>
+               <div class="welcome__container ">
+                  <div class="welcome__img w-100 ">
+                     <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                        <h1 class="welcome__text-h1">Cuarto año</h1>
+                        <p class="welcome__text-p">Proyectos</p>
                      </div>
-                     <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
-                        <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-                     </svg>
                   </div>
+                  <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
+                     <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                  </svg>
+               </div>
               
                <div class="main__container">
-
-                  <!-- <div class="proyecto__wrapper">
-                     <div class="proyecto__title pt-4">
-                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
-                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
-                     </div>
-                     <div class="proyecto__slider">
-
-                        <div class="proyecto__slider-container">
-                            <input type="radio" name="slider" id="item-1" checked>
-                            <input type="radio" name="slider" id="item-2">
-                            <input type="radio" name="slider" id="item-3">
-          
-                
-                            <div class="proyecto__slider-cards">
-                                <label class="card" for="item-1" id="selector-1">
-                                    <img class="img-fluid" src="./bobibot.jpeg">
-                                </label>
-                                <label class="card" for="item-2" id="selector-2">
-                                    <img class="img-fluid" src="./IMG_20220418_120829img2.jpg">
-                                </label>
-                                <label class="card" for="item-3" id="selector-3">
-                                    <img class="img-fluid" src="./IMG-20220819-WA0001.jpg">
-                                </label>
-                                
-                             </label>
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                  </div> -->
 
                   <div class="proyecto__wrapper">
                      <div class="proyecto__title pt-4">
@@ -410,11 +338,7 @@
                 </svg>
             </div>
 
-            <div
-               data-content
-               id="quinto"
-               class="section__proyectos content__wrapper"
-               >
+            <div data-content id="quinto" class="section__proyectos content__wrapper">
                <div class="welcome__container ">
                   <div class="welcome__img w-100 ">
                      <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
@@ -429,38 +353,6 @@
               
                <div class="main__container">
 
-                  <!-- <div class="proyecto__wrapper">
-                     <div class="proyecto__title pt-4">
-                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
-                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
-                     </div>
-                     <div class="proyecto__slider">
-
-                        <div class="proyecto__slider-container">
-                            <input type="radio" name="slider" id="item-1" checked>
-                            <input type="radio" name="slider" id="item-2">
-                            <input type="radio" name="slider" id="item-3">
-          
-                
-                            <div class="proyecto__slider-cards">
-                                <label class="card" for="item-1" id="selector-1">
-                                    <img class="img-fluid" src="./bobibot.jpeg">
-                                </label>
-                                <label class="card" for="item-2" id="selector-2">
-                                    <img class="img-fluid" src="./IMG_20220418_120829img2.jpg">
-                                </label>
-                                <label class="card" for="item-3" id="selector-3">
-                                    <img class="img-fluid" src="./IMG-20220819-WA0001.jpg">
-                                </label>
-                                
-                             </label>
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                  </div> -->
-
                   <div class="proyecto__wrapper">
                      <div class="proyecto__title pt-4">
                         <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
@@ -537,11 +429,7 @@
                 </svg>
             </div>
 
-            <div
-               data-content
-               id="sexto"
-               class="section__proyectos content__wrapper"
-               >
+            <div data-content id="sexto" class="section__proyectos content__wrapper">
                <div class="welcome__container ">
                   <div class="welcome__img w-100 ">
                      <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
@@ -556,38 +444,6 @@
               
                <div class="main__container">
 
-                  <!-- <div class="proyecto__wrapper">
-                     <div class="proyecto__title pt-4">
-                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
-                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
-                     </div>
-                     <div class="proyecto__slider">
-
-                        <div class="proyecto__slider-container">
-                            <input type="radio" name="slider" id="item-1" checked>
-                            <input type="radio" name="slider" id="item-2">
-                            <input type="radio" name="slider" id="item-3">
-          
-                
-                            <div class="proyecto__slider-cards">
-                                <label class="card" for="item-1" id="selector-1">
-                                    <img class="img-fluid" src="./bobibot.jpeg">
-                                </label>
-                                <label class="card" for="item-2" id="selector-2">
-                                    <img class="img-fluid" src="./IMG_20220418_120829img2.jpg">
-                                </label>
-                                <label class="card" for="item-3" id="selector-3">
-                                    <img class="img-fluid" src="./IMG-20220819-WA0001.jpg">
-                                </label>
-                                
-                             </label>
-                
-                            </div>
-                        </div>
-                
-                    </div>
-                  </div> -->
-
                   <div class="proyecto__wrapper">
                      <div class="proyecto__title pt-4">
                         <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
@@ -598,7 +454,7 @@
                            <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                  <div class="image__wrapper">
-                                    <img src="./bobibot.jpeg" alt="" />
+                                    <img src="./bobibot.jpeg" alt="Bobibot" title="6° IPP - Bobibot" />
                                  </div>
                               </div>
                
@@ -664,25 +520,16 @@
                 </svg>
             </div>
 
+            <div class="modalContainer">
+             
+               <div class="modalContent">
+                  <h1 class="modalH1"></h1>
+                  <img src="" alt="bobibot" class="modalImg">
+                  <p class="modalDesc"></p>
+               </div>
+            </div>
+
          </div>
       </div>
-
-      <script
-         src="https://code.jquery.com/jquery-3.6.1.js"
-         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-         crossorigin="anonymous">
-      </script>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-      <script src="../../main.js"></script>
-
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-      <script>
-         AOS.init();
-      </script>
-
-
    </body>
 </html>

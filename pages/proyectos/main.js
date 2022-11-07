@@ -113,3 +113,32 @@ const swiper = new Swiper(".swiper", {
   // },
   // effect: 'coverflow',
 });
+
+const images = document.querySelectorAll(".swiper-img");
+const modal = document.querySelector(".modalContainer");
+
+const imageModal = document.querySelector(".modalImg");
+const titleModal = document.querySelector(".modalH1");
+const descModal = document.querySelector(".modalDesc");
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    imageModal.src = image.src;
+    titleModal.innerHTML = image.title;
+    descModal.innerHTML = image.alt;
+    console.log(image.title);
+
+    modal.classList.add("modalContainerActivo");
+    modal.addEventListener("click", () => {
+      modal.classList.remove("modalContainerActivo");
+    });
+
+    // modal.addEventListener("keyDown", () => {
+    //   switch (key) {
+    //     case "Escape":
+    //       modal.classList.remove("modalContainerActivo");
+    //       break;
+    //   }
+    // });
+  });
+});
