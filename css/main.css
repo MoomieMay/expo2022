@@ -134,9 +134,7 @@
 #brand__img img {
   width: min(70vw, 250px);
   filter: brightness(76%);
-
 }
-
 
 @media (max-height: 728px) {
   #brand__img img {
@@ -177,8 +175,6 @@
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* Sidebar Styles */
 
@@ -483,4 +479,14 @@
     left: 0%;
     right: 0%;
   }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  transition: 0.2s;
+  background-color: rgb(251, 250, 3, 0.7);
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  pointer-events: none;
 }
