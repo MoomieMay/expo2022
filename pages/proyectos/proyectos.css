@@ -613,14 +613,18 @@ h1 {
     transform: scale(1);
   }
 }
-
-@media (max-height: 558px) {
+@media (max-height: 692px) {
   .modalImg {
     max-width: 700px;
   }
 }
-@media (max-height: 396px) {
+@media (max-height: 548px) {
   .modalImg {
     max-width: 500px;
+  }
+}
+@media (max-height: 434px) {
+  .modalImg {
+    max-width: 400px;
   }
 }

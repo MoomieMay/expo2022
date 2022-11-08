@@ -133,12 +133,8 @@ images.forEach((image) => {
       modal.classList.remove("modalContainerActivo");
     });
 
-    // modal.addEventListener("keyDown", () => {
-    //   switch (key) {
-    //     case "Escape":
-    //       modal.classList.remove("modalContainerActivo");
-    //       break;
-    //   }
-    // });
+    document.addEventListener("keydown", (e) => {
+      console.log(e);
+    });
   });
 });
