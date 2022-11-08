@@ -100,41 +100,52 @@ const swiper = new Swiper(".swiper", {
   keyboard: true,
   mousewheel: true,
 
-  // effect: 'creative',
-  // creativeEffect: {
-  // 	prev: {
-  // 		// will set `translateZ(-400px)` on previous slides
-  // 		translate: [0, 0, -400],
-  // 	},
-  // 	next: {
-  // 		// will set `translateX(100%)` on next slides
-  // 		translate: ['100%', 0, 0],
-  // 	},
-  // },
-  // effect: 'coverflow',
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [0, 0, -400],
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: ["100%", 0, 0],
+    },
+  },
+  effect: "coverflow",
 });
 
 const images = document.querySelectorAll(".swiper-img");
 const modal = document.querySelector(".modalContainer");
-
+const closeModal = document.querySelector(".modalClose");
 const imageModal = document.querySelector(".modalImg");
 const titleModal = document.querySelector(".modalH1");
 const descModal = document.querySelector(".modalDesc");
+const overlayModal = document.querySelector(".modalOverlay");
 
 images.forEach((image) => {
   image.addEventListener("click", () => {
     imageModal.src = image.src;
-    titleModal.innerHTML = image.title;
-    descModal.innerHTML = image.alt;
-    console.log(image.title);
+    titleModal.innerHTML = image.alt;
+    descModal.innerHTML = image.title;
 
     modal.classList.add("modalContainerActivo");
-    modal.addEventListener("click", () => {
+    overlayModal.classList.add("modalOverlayActivado");
+    closeModal.addEventListener("click", () => {
       modal.classList.remove("modalContainerActivo");
+      overlayModal.classList.remove("modalOverlayActivado");
+    });
+    overlayModal.addEventListener("click", () => {
+      modal.classList.remove("modalContainerActivo");
+      overlayModal.classList.remove("modalOverlayActivado");
     });
 
     document.addEventListener("keydown", (e) => {
-      console.log(e);
+      switch (e.key) {
+        case "Escape":
+          modal.classList.remove("modalContainerActivo");
+          overlayModal.classList.remove("modalOverlayActivado");
+          break;
+      }
     });
   });
 });
