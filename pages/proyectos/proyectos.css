@@ -425,7 +425,7 @@ h1 {
 .welcome__img {
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
-  background-image: url("./tecnicaturas/ipp/bobibot.jpeg");
+
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
