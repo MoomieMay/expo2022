@@ -1,206 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Pagina de la expo tecnica del eico 2022"
-    />
+   <head>
+      <!-- Meta tags -->
+      <meta charset="UTF-8" />
+      <meta
+         name="description"
+         content="Pagina de la expo tecnica del eico 2022, seccion Industria de proceso"
+         />
+      <meta
+         name="keywords"
+         content="EICO, EXPO2022, Expo tecnica, eico expo tecnica 2022, IP, I.P, Industria de procesos"
+         />
+      <meta name="author" content="Alumnos EICO 6to IPP 2022" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>IP | Eico expo tecnica 2022</title>
+      <!-- Meta tags end -->
+      <!-- CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+         crossorigin="anonymous"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      />
+      <link rel="stylesheet" href="../../../../css/main.css" />
+      <link rel="stylesheet" href="../../proyectos.css" />
+      <link rel="stylesheet" href="./ip.css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         />
+      <!-- ICONS -->
+      <link rel="shortcut icon" href="../../../../img/logos/logoip.png" />
+      <!-- scripts -->
+      <script defer src="https://kit.fontawesome.com/78e29a3f0a.js"></script>
+      <script
+         defer
+         src="https://code.jquery.com/jquery-3.6.1.js"
+         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+         crossorigin="anonymous">
+      </script>
 
-    <meta
-      name="keywords"
-      content="EICO, EXPO2022, Expo tecnica, eico expo tecnica 2022"
-    />
-    <meta name="author" content="Alumnos EICO 6to IPP 2022" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IP | Eico expo tecnica 2022</title>
-    <!-- Meta tags end -->
+      <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../proyectos.css" />
-    <link rel="stylesheet" href="./ip.css" />
+      <script defer src="../../main.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- ICONS -->
-    <link rel="shortcut icon" href="/img/logos/logoip.png" />
-    <script src="https://kit.fontawesome.com/78e29a3f0a.js"></script>
-  </head>
-  <body class="body">
-    <div id="main-container">
-      <!-- btn -->
-      <div id="btn__sidebar__wrapper" class="position-absolute w-100">
-        <!-- INICIO SIDEBAR -->
-        <div id="sidebar__container">
-          <div
-            class="img__sidebar d-flex justify-content-center align-items-center"
-          >
-            <img
-              class="img-fluid"
-              src="/img/logos/logo__M.png"
-              width="250px"
-              alt=""
-            />
-          </div>
-          <ul class="sidebar-nav mt-4 mb-4 p-4">
-            <li class="text-center"><a href="/index.html">Inicio</a></li>
-            <li class="text-center"><a href="">Galeria</a></li>
-            <li class="text-center">
-              <a target="_blank" href="http://escuela.eico.edu.ar/web/"
-                >Pagina principal</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- FIN SIDEBAR -->
+      <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <!-- INICIO BTN -->
-        <div class="btn__container">
-          <button
-            class="nav__btn__hamburger"
-            style="margin-top: 0.5em; margin-left: 1em"
-          >
-            <div class="bar"></div>
-          </button>
-        </div>
-        <!-- FIN BTN -->
-      </div>
-      <!-- btn -->
-
-      <div class="header" style="position: absolute; z-index: 1">
-        <p class="header__item header__item-active full" data-target="#inicio">
-          Inicio
-        </p>
-        <p class="header__item full" data-target="#tercer">3er año</p>
-        <p class="header__item full" data-target="#cuarto">4to año</p>
-        <p class="header__item full" data-target="#quinto">5to año</p>
-        <p class="header__item full" data-target="#sexto">6to año</p>
-        <button class="header__item-dropdown text-decoration-none">
-          <p
-            class="header_dropdown-title"
-            style="display: flex; align-items: center; gap: 1em"
-          >
-            Proyectos<i
-              style="font-size: 0.8em"
-              class="fa-solid fa-arrow-turn-down"
-            ></i>
-          </p>
-
-          <ul class="header__dropdown">
-            <p class="header__item header__item-active" data-target="#inicio">
-              Inicio
-            </p>
-            <p class="header__item" data-target="#tercer">3er año</p>
-            <p class="header__item" data-target="#cuarto">4to año</p>
-            <p class="header__item" data-target="#quinto">5to año</p>
-            <p class="header__item" data-target="#sexto">6to año</p>
-          </ul>
-        </button>
-      </div>
-
-      <div class="content">
-        <div id="overlay"></div>
-        <!-- Pagina de inicio -->
-        <div data-content id="inicio" class="content__wrapper active">
-          <div class="sliderImg__wrapper">
-            <ul class="sliderImg__ul">
-              <li class="sliderImg__li">
-                <img src="./bobibot.jpeg" alt="" class="sliderImg__img" />
-              </li>
-              <li class="sliderImg__li">
-                <img
-                  src="./IMG_20220418_120829.jpg"
-                  alt=""
-                  class="sliderImg__img"
-                />
-              </li>
-              <li class="sliderImg__li">
-                <img
-                  src="./IMG_20220418_120829img2.jpg"
-                  alt=""
-                  class="sliderImg__img"
-                />
-              </li>
-              <li class="sliderImg__li">
-                <img
-                  src="./IMG-20220819-WA0001.jpg"
-                  alt=""
-                  class="sliderImg__img"
-                />
-              </li>
-            </ul>
-          </div>
-          <div class="inicioText__container position-absolute w-100">
-            <div class="inicioText__wrapper">
-              <h1 class="inicioText__h1 animate__animated animate__fadeInDown">
-                <span class="inicioText__span text-center d-flex"
-                  >Bienvenidos<br />a la <br />seccion <br />de <br />&nbsp
-                </span>
-
-                <div class="inicioText__mensaje">
-                  <div class="word1">Industria</div>
-                  <div class="word2">De</div>
-                  <div class="word3">Procesos</div>
-                </div>
-              </h1>
+   </head>
+   <body class="body">
+      <div id="main-container">
+         <!-- btn -->
+         <div id="btn__sidebar__wrapper" class="position-absolute w-100">
+            <!-- INICIO SIDEBAR -->
+            <div id="sidebar__container">
+               <div
+                  class="img__sidebar d-flex justify-content-center align-items-center"
+                  >
+                  <img
+                     class="img-fluid"
+                     src="../../../../img/logos/logo__M.png"
+                     width="250px"
+                     alt=""
+                     />
+               </div>
+               <ul class="sidebar-nav mt-4 mb-4 p-4">
+                  <li class="text-center"><a href="../../../../index.html">Inicio</a></li>
+                
+                  <li class="text-center">
+                     <a target="_blank" href="http://escuela.eico.edu.ar/web/">Pagina principal</a>
+                  </li>
+                  
+               </ul>
             </div>
-          </div>
-        </div>
+            <!-- FIN SIDEBAR -->
+            <!-- INICIO BTN -->
+            <div class="btn__container">
+               <button class="nav__btn__hamburger" style="margin-top: 0.5em; margin-left: 1em">
+                  <div class="bar"></div>
+               </button>
+            </div>
+            <!-- FIN BTN -->
+         </div>
+         <!-- btn -->
+         <div class="header" >
+            <p class="header__item header__item-active full home" data-target="#inicio">Inicio</p>
+            <p class="header__item full tab__menu"" data-target="#tercer">3er año</p>
+            <p class="header__item full tab__menu" data-target="#cuarto">4to año</p>
+            <p class="header__item full tab__menu" data-target="#quinto">5to año</p>
+            <p class="header__item full tab__menu" data-target="#sexto">6to año</p>
+            <button class="header__item-dropdown text-decoration-none">
+               <p class="header_dropdown-title" style="display: flex; align-items: center; gap: 1em">Proyectos
+                  <i style="font-size: 0.8em" class="fa-solid fa-arrow-turn-down"></i>
+               </p>
+               <ul class="header__dropdown">
+                  <p class="header__item header__item-active home" data-target="#inicio">Inicio</p>
+                  <p class="header__item tab__menu"" data-target="#tercer"> 3er año</p>
+                  <p class="header__item tab__menu" data-target="#cuarto">4to año</p>
+                  <p class="header__item tab__menu" data-target="#quinto">5to año</p>
+                  <p class="header__item tab__menu" data-target="#sexto">6to año</p>
+                 
+               </ul>
+            </button>
+         </div>
 
-        <div
-          data-content
-          id="tercer"
-          class="section__proyectos content__wrapper"
-        ></div>
+         <div class="content">
+            <div id="overlay"></div>
+            <!-- Pagina de inicio -->
+            <div data-content id="inicio" class="content__wrapper active">
+               <div class="sliderImg__wrapper">
+                  <ul class="sliderImg__ul">
+                     <li class="sliderImg__li">
+                        <img src="./MMO/3ro/mmo - 4.png" alt="3°A y B MMO" title="Visita a obra complejo de viviendas sistema construcción en seco." class="sliderImg__img" />
+                     </li>
+                     <li class="sliderImg__li">
+                        <img
+                           src="./"
+                           alt=""
+                           class="sliderImg__img"/>
+                     </li>
+                     <li class="sliderImg__li">
+                        <img
+                           src="./"
+                           alt=""
+                           class="sliderImg__img"/>
+                     </li>
+                     <li class="sliderImg__li">
+                        <img
+                           src="./IP/6to/ip - 4.webp  "
+                           alt=""
+                           class="sliderImg__img"/>
+                     </li>
+                  </ul>
+               </div>
+             
+               
+               <div class="inicioText__container position-absolute w-100">
+                  <div class="inicioText__wrapper">
+                     <h1 class="inicioText__h1 animate__animated animate__fadeInDown">
+                        <span class="inicioText__span text-center d-flex"
+                           >Bienvenidos<br />a la <br />seccion <br />de <br />&nbsp
+                        </span>
+                        <div class="inicioText__mensaje">
+                           <div class="word1">Industria</div>
+                           <div class="word2">De</div>
+                           <div class="word3">Procesos</div>
+                        </div>
+                     </h1>
+                  </div>
+               </div>
+            </div>
 
-        <div
-          data-content
-          id="cuarto"
-          class="section__proyectos content__wrapper"
-        >
-          <h1>4to año</h1>
-        </div>
+            <div data-content id="tercer" class="section__proyectos ">
+               <div class="welcome__container ">
+                  <div class="welcome__img w-100 " style="background-image: url(./MMO/3ro/mmo\ -\ 4.png)">
+                     <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                        <h1 class="welcome__text-h1">Tercer año</h1>
+                        <p class="welcome__text-p">Proyectos</p>
+                     </div>
+                  </div>
+                  <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
+                     <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                  </svg>
+               </div>
+              
+               <div class="main__container">
 
-        <div
-          data-content
-          id="quinto"
-          class="section__proyectos content__wrapper"
-        >
-          <h1>5to año</h1>
-        </div>
+                  <div class="proyecto__wrapper">
+                     <div class="proyecto__title pt-4">
+                        <h1 class="proyecto__title-h1 text-center">3°A y B MMO</h1>
+                        <p class="proyecto__title-p text-center">Visita de obra</p>
+                     </div>
+                     <div class="container">
+                        <div class="swiper">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./MMO/3ro/mmo - 4.png" alt="3°A y B MMO" title="Visita a obra complejo de viviendas sistema construcción en seco."  />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./MMO/3ro/mmo - 2.png" alt="3°A y B MMO" title="Visita a obra complejo de viviendas sistema construcción en seco."  />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./MMO/3ro/mmo - 3.png" alt="3°A y B MMO" title="Visita a obra complejo de viviendas sistema construcción en seco." />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./MMO/3ro/mmo - 1.png" alt="3°A y B MMO" title="Visita a obra complejo de viviendas sistema construcción en seco." />
+                                 </div>
+                              </div>
+     
+                           </div>
+               
+                           <div class="swiper-pagination"></div>
+               
+                           <div class="swiper-button-prev"></div>
+                           <div class="swiper-button-next"></div>
+                          
+                        </div>
+                     </div>
+                  </div>
 
-        <div
-          data-content
-          id="sexto"
-          class="section__proyectos content__wrapper"
-        >
-          <h1>6to año</h1>
-        </div>
+                  <div class="proyecto__wrapper">
+                     <div class="proyecto__title pt-4">
+                        <h1 class="proyecto__title-h1 text-center">3°A y B MMO</h1>
+                        <p class="proyecto__title-p text-center">Armado de maqueta</p>
+                     </div>
+                     <div class="container">
+                        <div class="swiper">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./MMO/3ro/mmo - 5.png" alt="3°A y B MMO" title="Armado de maqueta de perfileria metálica."  />
+                                 </div>
+                              </div>
+                           </div>
+               
+                    
+                          
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+
+               <svg class="svg-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#006423" fill-opacity="1" d="M0,288L60,293.3C120,299,240,309,360,293.3C480,277,600,235,720,224C840,213,960,235,1080,224C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                </svg>
+            </div>
+
+            <div data-content id="cuarto" class="section__proyectos content__wrapper">
+               <div class="welcome__container ">
+                  <div class="welcome__img w-100 ">
+                     <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                        <h1 class="welcome__text-h1">Cuarto año</h1>
+                        <p class="welcome__text-p">Proyectos</p>
+                     </div>
+                  </div>
+                  <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
+                     <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                  </svg>
+               </div>
+              
+               <div class="main__container">
+
+                  <div class="proyecto__wrapper">
+                     <div class="proyecto__title pt-4">
+                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
+                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
+                     </div>
+                     <div class="container">
+                        <div class="swiper">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./bobibot.jpeg" alt="Proyecto realizado en arduino, auto que esquiva obstaculos mediante sensores" title="6° IPP - Bobibot" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG-20220819-WA0001.jpg" alt="" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
+                                 </div>
+                              </div>
+     
+                           </div>
+               
+                           <div class="swiper-pagination"></div>
+               
+                           <div class="swiper-button-prev"></div>
+                           <div class="swiper-button-next"></div>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+
+               <svg class="svg-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#006423" fill-opacity="1" d="M0,288L60,293.3C120,299,240,309,360,293.3C480,277,600,235,720,224C840,213,960,235,1080,224C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                </svg>
+            </div>
+
+            <div data-content id="quinto" class="section__proyectos content__wrapper">
+               <div class="welcome__container ">
+                  <div class="welcome__img w-100 ">
+                     <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                        <h1 class="welcome__text-h1">Quinto año</h1>
+                        <p class="welcome__text-p">Proyectos</p>
+                     </div>
+                  </div>
+                  <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
+                     <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                  </svg>
+               </div>
+              
+               <div class="main__container">
+
+                  <div class="proyecto__wrapper">
+                     <div class="proyecto__title pt-4">
+                        <h1 class="proyecto__title-h1 text-center">6° IPP - Bobibot</h1>
+                        <p class="proyecto__title-p text-center">Integrante, Integrante, Integrante</p>
+                     </div>
+                     <div class="container">
+                        <div class="swiper">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./bobibot.jpeg" alt="Proyecto realizado en arduino, auto que esquiva obstaculos mediante sensores" title="6° IPP - Bobibot" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG-20220819-WA0001.jpg" alt="" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
+                                 </div>
+                              </div>
+               
+                              <div class="swiper-slide">
+                                 <div class="image__wrapper">
+                                    <img class="swiper-img" src="./IMG_20220418_120829img2.jpg" alt="" />
+                                 </div>
+                              </div>
+     
+                           </div>
+               
+                           <div class="swiper-pagination"></div>
+               
+                           <div class="swiper-button-prev"></div>
+                           <div class="swiper-button-next"></div>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+
+               <svg class="svg-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#006423" fill-opacity="1" d="M0,288L60,293.3C120,299,240,309,360,293.3C480,277,600,235,720,224C840,213,960,235,1080,224C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                </svg>
+            </div>
+
+            <div data-content id="sexto" class="section__proyectos content__wrapper">
+               <div class="welcome__container ">
+                  <div class="welcome__img w-100" style="background-image: url(./IP/6to/ip\ -\ 4.webp )">
+                     <div class="welcome__text w-100 h-100 d-flex align-items-center justify-content-center flex-column animate__animated animate__fadeInDown">
+                        <h1 class="welcome__text-h1">Sexto año</h1>
+                        <p class="welcome__text-p">Proyectos</p>
+                     </div>
+                  </div>
+                  <svg class="svg-separator " xmlns="http://www.w3.org/2000/svg" viewbox ="0 0 1440 320">
+                     <path fill="#006423" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,96C480,85,600,107,720,112C840,117,960,107,1080,90.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                  </svg>
+               </div>
+                  
+               <div class="main__container">
+
+                     <div class="proyecto__wrapper">
+                        <div class="proyecto__title pt-4">
+                           <h1 class="proyecto__title-h1 text-center">6°A IP</h1>
+                           <p class="proyecto__title-p text-center">Determinacion de sulfatos</p>
+                        </div>
+                        <div class="container">
+                           <div class="swiper">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <div class="image__wrapper">
+                                       <img class="swiper-img" src="./IP/6to/ip - 1.webp" alt="6°A y B IP" title="Determinacion de sulfatos a partir de una curva de calibración el uso del espectrofotometro" />
+                                    </div>
+                                 </div>
+                  
+                                 <div class="swiper-slide">
+                                    <div class="image__wrapper">
+                                       <img class="swiper-img" src="./IP/6to/ip - 2.webp" alt="6°A y B IP" title="Determinacion de sulfatos a partir de una curva de calibración el uso del espectrofotometro" />
+                                    </div>
+                                 </div>
+                  
+                                 <div class="swiper-slide">
+                                    <div class="image__wrapper">
+                                       <img class="swiper-img" src="./IP/6to/ip - 3.webp" alt="6°A y B IP" title="Determinacion de sulfatos a partir de una curva de calibración el uso del espectrofotometro" />
+                                    </div>
+                                 </div>
+                  
+                                 <div class="swiper-slide">
+                                    <div class="image__wrapper">
+                                       <img class="swiper-img" src="./IP/6to/ip - 4.webp" alt="6°A y B IP" title="Determinacion de sulfatos a partir de una curva de calibración el uso del espectrofotometro" />
+                                    </div>
+                                 </div>
+
+
+                                 <div class="swiper-slide">
+                                  <div class="image__wrapper">
+                                     <img class="swiper-img" src="./IP/6to/ip - 5.webp" alt="6°A y B IP" title="Determinacion de sulfatos a partir de una curva de calibración el uso del espectrofotometro" />
+                                  </div>
+                               </div>
+        
+                              </div>
+                  
+                              <div class="swiper-pagination"></div>
+                  
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+                             
+                           </div>
+                        </div>
+                     </div>
+  
+               </div>
+   
+               <svg class="svg-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#006423" fill-opacity="1" d="M0,288L60,293.3C120,299,240,309,360,293.3C480,277,600,235,720,224C840,213,960,235,1080,224C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+               </svg>
+              
+            </div>
+
+            <div class="modalContainer">
+               <div class="modalContent">
+                  <div class="modalOverlay"></div>
+                  <div class="modalElements">
+                     <span class="modalClose">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                           <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                         </svg>
+                     </span>
+                     <h1 class="modalH1"></h1>
+                     <img src="" alt="bobibot" class="modalImg">
+                     <p class="modalDesc"></p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
       </div>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="../../main.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+   </body>
 </html>
