@@ -483,6 +483,13 @@ h1 {
   position: relative;
   padding-top: 56.25%;
 }
+.video__wrapper {
+  width: 100%;
+  position: relative;
+}
+.video__wrapper iframe {
+  height: 660px;
+}
 .swiper-wrapper,
 .swiper-slide,
 .image__wrapper {
